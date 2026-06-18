@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <body>
+    <h2>上傳圖片測試</h2>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <!-- 
+        action="/upload"：表單送出時，要把資料送到哪個網址。
+        enctype="multipart/form-data"：告訴瀏覽器「我要用什麼格式打包 form 裡的資料送給後端？」
+    -->
+      <input type="text" name="username" />
+      <input type="text" name="age" />
+      <input type="file" name="avatar" />
+      <button type="submit">上傳</button>
+    </form>
+  </body>
+</html>
